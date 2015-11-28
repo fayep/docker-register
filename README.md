@@ -24,6 +24,7 @@ If you run the container on multiple hosts, they will be grouped together automa
 
 There are a few simplications that were made:
 
+* *docker-gen built for alpine* - You have to do this yourself.
 * *Containers can only expose one port* - This is a simplification but if the container `EXPOSE`s
 multiple ports, it won't be registered in etcd.
 * *Exposed ports must be unique to the service* - Each container must expose it's service on a unique
